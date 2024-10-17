@@ -1,0 +1,104 @@
+Task 1:
+package array;
+public class Array {
+ public static void main(String[] args) {
+ 
+ String[] fruits = {"mango", "Banana", "apple", "Orange", "Grapes"};
+ 
+ for (int i = 0; i < fruits.length; i++) {
+ System.out.println(fruits[i]);
+ }
+ }
+}
+Output:
+run:
+mango
+Banana
+apple
+Orange
+Grapes
+BUILD SUCCESSFUL (total time: 0 seconds)
+Task 2:
+package task.pkg2;
+/**
+*
+* @author DELL
+*/
+public class Task2 {
+ int a = 2; 
+ public Task2() {
+ }
+ public void fun() {
+ 
+ if (a % 2 == 0) {
+ System.out.println("even");
+ } else {
+ System.out.println("odd");
+ }
+ }
+ public static void main(String[] args) {
+ 
+ Task2 task = new Task2();
+ task.fun();
+ }
+}
+Output
+run:
+even
+BUILD SUCCESSFUL (total time: 0 seconds)
+Task 3:
+package taskkk.pkg3;
+public class Taskkk3 {
+ void show() {
+ int i = 1; 
+ while (i < 20) { 
+ if (i % 2 == 0) { 
+ System.out.println("even no are " + i);
+ }
+ i++; 
+ }
+ }
+ public static void main(String[] args) {
+ Taskkk3 st = new Taskkk3();
+ st.show();
+ }
+}
+Output:
+run:
+even no are 2
+even no are 4
+even no are 6
+even no are 8
+even no are 10
+even no are 12
+even no are 14
+even no are 16
+even no are 18
+BUILD SUCCESSFUL (total time: 0 seconds)
+Task 4:
+package taskkk4;
+public class Taskkk4 {
+ void print() {
+ int a=4;
+ int b=6;
+ for (int i = 0; i <a; i++) { 
+ for (int j = 0; j <b; j++) { 
+ System.out.print("*");
+ 
+ }
+ 
+ System.out.println(); 
+ }
+ }
+ public static void main(String[] args) {
+ Taskkk4 t = new Taskkk4();
+ t.print();
+ }
+}
+Output:
+run:
+******
+******
+******
+******
+BUILD SUCCESSFUL (total time: 0 seconds)
