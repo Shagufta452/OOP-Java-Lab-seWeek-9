@@ -1,0 +1,136 @@
+Task1
+package task5;
+public class Task5 {
+
+ public static void main(String[] args) {
+ Player pl = new Player("john","1st");
+ Player p2 = new Player("ahmed","2nd");
+ Player p3 = new Player("jon","3rd");
+
+Team tm = new Team("pakistan", pl,p2,p3);
+tm.print();
+ }
+
+}
+package task5;
+public class Player {
+ String playername;
+ String position;
+ public Player(String playername, String position) {
+ this.playername = playername;
+ this.position = position;
+ }
+
+ public void display(){
+ System.out.println("player name is "+playername);
+ System.out.println("position is "+position);
+ }
+
+}package task5;
+public class Team {
+ String teamname;
+ Player player;
+ Player player1;
+ Player player2;
+ public Team(String teamname, Player player, Player player1, Player player2) {
+ this.teamname = teamname;
+ this.player = player;
+ this.player1 = player1;
+ this.player2 = player2;
+ }
+
+ void print(){
+ System.out.println("team name is"+teamname);
+ player.display();
+ player1.display();
+ player2.display();
+ }
+
+}
+Output
+run:
+team name ispakistan
+player name is john
+position is 1st
+player name is ahmed
+position is 2nd
+player name is jon
+position is 3rd
+BUILD SUCCESSFUL (total time: 0 seconds)
+Task 2
+package taskkk5;
+class Cpu{
+ String brand;
+ String capacity;
+ public Cpu(String brand, String capacity) {
+ this.brand = brand;
+ this.capacity = capacity;
+ }
+ void display(){
+ System.out.println("Cpubrand is"+brand);
+ System.out.println("cpucapacity is"+capacity);
+ }
+}
+class Ram{
+ String brand;
+ String capacity;
+ public Ram(String brand, String capacity) {
+ this.brand = brand;
+ this.capacity = capacity;
+ }
+ void display(){
+ System.out.println("RAMbrand is"+brand);
+ System.out.println("RANcapacity is"+capacity);
+ }
+
+}
+class Harddrive{
+ String brand;
+ String capacity;
+ public Harddrive(String brand, String capacity) {
+ this.brand = brand;
+ this.capacity = capacity;
+ }
+ void display(){
+ System.out.println("harddrivebrand is"+brand);
+ System.out.println("hardrivecapacity is"+capacity);
+ }
+
+
+}
+public class taskkk5 {
+ public static void main(String[] args) {
+ Cpu cpu = new Cpu("Intel", "3.5 GHz");
+ Ram ram = new Ram("Corsair", "16 GB");
+ Harddrive harddrive = new Harddrive("Seagate", "1 TB");
+ Computer com = new Computer(cpu, ram, harddrive);
+ com.print();
+ }
+
+}package taskkk5;
+public class Computer {
+ Cpu cpu;
+ Ram ram;
+ Harddrive harddrive;
+ public Computer(Cpu cpu, Ram ram, Harddrive harddrive) {
+ this.cpu = cpu;
+ this.ram = ram;
+ this.harddrive = harddrive;
+ }
+
+ void print() {
+ System.out.println("Computer components");
+cpu.display();
+ram.display();
+harddrive.display();
+}
+}
+ Output
+Computer components
+Cpubrand isIntel
+cpucapacity is4 GHz
+RAMbrand isMac
+RANcapacity is16 GB
+harddrivebrand iswindow
+hardrivecapacity is16TB
+BUILD SUCCESSFUL (total time: 0 seconds)
