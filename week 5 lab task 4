@@ -1,0 +1,123 @@
+Task 4
+Task 1
+public class Name {
+ public static void main(String[] args) {
+ int height = 7; 
+ int width = 5; 
+ 
+ for (int row = 1; row <= height; row++) {
+ 
+ 
+ for (int col = 1; col <= width; col++) {
+ if (row == 1 || row == 4 || row == 7 || (col == 1 && row < 4) || (col == 5 && row > 4)) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ System.out.print(" "); 
+ 
+ for (int col = 1; col <= width; col++) {
+ if (col == 1 || col == 5 || row == 4) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ 
+ System.out.print(" "); 
+ 
+ for (int col = 1; col <= width; col++) {
+ if (col == 1 || col == 5 || (row == 1 && col > 1 && col < 5) || row == 4) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ 
+ System.out.print(" "); 
+ 
+ for (int col = 1; col <= width; col++) {
+ if (row == 1 || row == 7 || col == 1 || (col == 5 && row > 3) || (row == 4 && col > 2)) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ System.out.print(" "); 
+ 
+ for (int col = 1; col <= width; col++) {
+ if ((col == 1 || col == 5) && row < 7 || (row == 7 && col > 1 && col < 5)) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ 
+ System.out.print(" "); 
+ // Print letter 'F'
+ for (int col = 1; col <= width; col++) {
+ if (row == 1 || row == 4 || (col == 1)) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ // Space between letters
+ System.out.print(" "); 
+ // Print letter 'T'
+ for (int col = 1; col <= width; col++) {
+ if (row == 1 || col == 3) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ 
+ System.out.print(" "); 
+ 
+ for (int col = 1; col <= width; col++) {
+ if (col == 1 || col == 5 || (row == 1 && col > 1 && col < 5) || row == 4) {
+ System.out.print("* ");
+ } else {
+ System.out.print(" ");
+ }
+ }
+ 
+ System.out.println();
+ }
+ }
+}
+Output
+Task 2
+package tasssk2;
+class Laptop {
+ String brand;
+ public Laptop(String brand) {
+ this.brand = brand;
+ }
+ public void print(){
+ System.out.println("Brand name is "+brand);
+ }
+ 
+}
+package tasssk2;
+import java.util.Scanner;
+public class Tasssk2 {
+ 
+ public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter the brand of laptop"); 
+String brand=scanner.nextLine();
+Laptop lp=new Laptop(brand);
+lp.print();
+ }
+ 
+}
+Output
+run:
+Enter the brand of laptop
+window
+Brand name is window
+BUILD SUCCESSFUL (total time: 4 seconds)
+ 
