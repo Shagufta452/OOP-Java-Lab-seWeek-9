@@ -1,0 +1,117 @@
+Task 1
+#include <iostream>
+#include <string>
+using namespace std;
+class Employee {
+public:
+string name;
+string jobTitle;
+int salary;
+public:
+Employee(string name, string jobTitle, intsalary) {
+this->name = name;
+this->jobTitle = jobTitle;
+this->salary = salary;
+}
+void display() {
+cout << "Name: " << name <<endl;
+cout << "Job Title: " << jobTitle<<endl;cout << "Salary: " << salary <<endl;
+}
+void update() {
+string response;
+cout << "Do you want to updatethesalary?(yes/no): ";
+cin >> response;
+if (response == "yes") {
+salary++;
+cout << "Salary updatedto: "<<salary<< endl;
+} else {
+cout << "Okay, thank you!" <<endl;}
+}
+};
+int main() {
+Employee emp("Shagufta"
+,
+"Teacher",
+10000);
+emp.display();
+emp.update();
+return 0;
+}
+Task 2
+#include <iostream>
+#include <string>
+using namespace std;
+class Car {
+public:
+string name;
+string topSpeed;
+int model;
+Car(string name, string topSpeed, int model) {
+this->name = name;
+this->topSpeed = topSpeed;
+this->model = model;
+}
+void display() {
+cout << "Name: " << name << endl;
+cout << "Top Speed: " << topSpeed << endl;
+cout << "Model: " << model << endl;
+}
+};
+int main() {
+Car c1("BMW", "10000", 2014);
+c1.display();
+return 0;
+}
+Task 3:
+#include <iostream>
+#include <string>
+using namespace std;
+class Laptop {
+public:
+string brand;
+int model;
+int serial;
+string colour;
+int price;
+int processorSpeed;
+int ram;
+double screenSize;
+Laptop(string brand, int model, int serial, string colour, int price, int processorSpeed, int ram, double screenSize) {
+this->brand = brand;
+this->model = model;
+this->serial = serial;
+this->colour = colour;
+this->price = price;
+this->processorSpeed = processorSpeed;
+this->ram = ram;
+this->screenSize = screenSize;
+}
+void display() {
+cout << "Brand: " << brand << endl;
+cout << "Model: " << model << endl;
+cout << "Serial: " << serial << endl;
+cout << "Colour: " << colour << endl;
+cout << "Price: " << price << endl;
+cout << "Processor Speed: " << processorSpeed << " GHz" << endl;
+cout << "RAM: " << ram << " GB" << endl;
+cout << "Screen Size: " << screenSize << " inches" << endl;
+}
+void update() {
+string response;
+cout << "Do you want to update the RAM? (yes/no): ";
+cin >> response;
+if (response == "yes") {
+ram++;
+cout << "RAM updated to: " << ram << " GB" << endl;
+} else {
+cout << "Okay, thank you!" << endl;
+}
+}
+};
+int main() {
+Laptop lp("Windows", 2013, 100, "grey", 10000, 100, 18, 12.2);
+lp.display();
+lp.update();
+return 0;
+}
+OUTPUTS
