@@ -1,0 +1,103 @@
+TASK 1
+package task.pkg1;
+public class Task1 {
+
+ public static void main(String[] args) {
+ Student s1=new Student("shagufta",19,"islamabad");
+ s1.display();
+ Student s2=new Student("ayesha",20,"islamabad");
+ s2.display();
+ }
+
+}
+package task.pkg1;
+public class Student {
+ String name;
+ int age;
+ String city;
+ public Student(String name, int age, String city) {
+ this.name = name;
+ this.age = age;
+ this.city = city;
+ }
+
+ public void display(){
+ System.out.println("Name: " + name);
+ System.out.println("age: " + age);
+ System.out.println("city isl: " +city);
+ }
+
+}
+TASK 2:
+package taskk2;
+public class Area{
+int l=3;
+int w=2;
+ public static void main(String[] args) {
+ Area a1=new Area();
+ int b=a1.l*a1.w;
+ System.out.println("result b = "+b);
+
+ }
+]
+
+TASK 3:
+package taskk3;
+public class Taskk3 {
+ public static void main(String[] args) {
+ Computer cs=new Computer("Apple","i5",50000,"IOS");
+ cs.display();
+ }
+
+}
+package taskk3;
+class Computer {
+ String name;
+ String configuration;
+ int cost;
+ String operatingSystem;
+ public Computer(String name, String configuration, int cost, String operatingSystem) {
+ this.name = name;
+ this.configuration = configuration;
+ this.cost = cost;
+ this. operatingSystem = operatingSystem;
+ }
+ public void display(){
+ System.out.println("The company name "+name);
+ System.out.println("The configuration is "+configuration);
+ System.out.println("Its Cost is "+cost);
+ System.out.println("Its operating System is "+operatingSystem);
+
+
+ }
+
+}
+
+
+TASK 4:
+package task4;
+public class Task4 {
+ int a;
+ int b;
+ int c;
+ public Task4(int a, int b, int c) {
+ this.a = a;
+ this.b = b;
+ this.c = c;
+ }
+ public void maximum() {
+ if (a > b && a > c) {
+ System.out.println("a is the maximum");
+ } else if (b > a && b > c) {
+ System.out.println("b is the maximum");
+ } else if (c > a && c > b) {
+ System.out.println("c is the maximum");
+ } else {
+ System.out.println("sorry.");
+ }
+ }
+ public static void main(String[] args) {
+ Task4 task = new Task4(2,3,1);
+ task.maximum();
+ }
+}
